@@ -1,0 +1,38 @@
+
+            <html>
+                <head>
+                    <title>OPEN FDA</title>
+                </head>
+                <body style='background: lightblue'>
+            <p><h3>LISTA DE MEDICAMENTOS:</h3></p>
+            <p><form action="listDrugs" method="get">
+                  Cantidad de medicamentos a obtener:<input type="text" name='limit' value="maximo 100">
+                  <input type="submit" value="Buscar">
+            </form>
+            <p><h3>BUSQUEDA DE MEDICAMENTOS:</h3></p>
+            <form action = "searchDrug" method="get">
+                  Principio activo*: <input type="text" name="active_ingredient" value="Introduzca principio">
+                  Limite de medicamentos: <input type="text" name="limit" value="maximo 100">
+                  <input type="submit" value="Buscar">
+                  <br><br>
+                  <td>*Recuerde que debe buscar previamente el principio en el listado de medicamentos</td>
+            </form>
+            <p><h3>LISTA DE EMPRESAS:</h3></p>
+            <form action = "listCompanies" method="get">
+                  Cantidad de empresas a obtener: <input type="text" name="limit" value="maximo 100">
+                  <input type="submit" value="Buscar">
+            </form>
+            <p><h3>BUSQUEDA DE EMPRESAS:</h3></p>
+            <form action = "searchCompany" method="get">
+                  Empresa**: <input type="text" name="company" value="Introduzca empresa">
+                  Limite de medicamentos: <input type="text" name="limit" value="maximo 100">
+                  <input type="submit" value="Buscar">
+                  <br><br>
+                  <td>**Recuerde que debe buscar el nombre de la empresa que desee en el listado de empresas</td>
+            </form>
+            <p><h3>USOS Y PRECAUCIONES:</h3></p>
+            <form action = "listWarnings" method="get">
+                  Introduzca la cantidad de precauciones que desea obtener: <input type="text" name="limit" value="maximo 100">
+                  <input type="submit" value="Buscar">
+            </form>
+                
